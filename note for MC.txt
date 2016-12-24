@@ -1,0 +1,25 @@
+login --> kiem tra role , session--> security
+	password luu o db ko dung o dang plain text 
+		tot nhat la hash , best : password + salt --> hash 
+
+load data --> o --> template + tile --> user co template rieng, manager co template rieng
+
+load data --> su dung hibernate IOC DI+ spring service + database-->  
+
+kiem tra luc 
+
+list ra form tao candidate moi --> SpringMVC form 
+
+tao entities class tu database = hibernate tool
+
+
+
+view --> controller --> service --> dao --> model --> database
+
+Cac function CRUD create remove update delete
+role - role name
+user(1) - interviewee
+
+manager(3) - PM,interviewer
+
+only PM can delete 
