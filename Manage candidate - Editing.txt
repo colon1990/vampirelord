@@ -1,0 +1,392 @@
+Project assignment
+1. Manage candidate list (add,edit, delete)
+ 1.1 Candidate info: 
+ 
+	x GPA    
+    x Faculty    
+    x Graduation Year
+    x Day Of Birth
+    x Email
+    x Phone 
+    x Address
+    x Degree (College, Bachalor,..)
+    x Source    
+	
+    y Week No.    
+    y Full Name    
+    y Uni. Name    
+    y Position    
+    y IQ Test
+    y Technical Test    
+    y Toeic
+    y Interview Date    
+    y Interview Result    
+    y Interview Comments    
+    y Interviewer Name
+    y Notes
+    
+
+
+ 1.2 Statistics: 
+   . List and count all candidates PASSED/FAILED by weekly, monthly, quarterly, or by [from date, to date]
+   . List and count all candidates filter by University name, GPA, interview times, Faculty, week no, Graduation Year, Toeic, Passed/Failed..)
+
+2. User management: There are 3 roles (admin, interviewer, PM)
+ - Admin is able to create/edit/delete interviewer account
+ - Interviewer can change password.
+ - Interviewer can manage his candidate only
+ - PM can manage all candidates
+ - All accounts can do "Manage candidate list" function
+
+ 
+ 
+ 
+ tach 1.1 thanh 2 bang
+ 
+Table Candidate : contain personal info
+	ID_Candidate
+	Full Name   
+	Uni. Name 
+	GPA
+	Faculty
+	Graduation Year
+	Day Of Birth
+	Email
+	Phone
+	Address
+	Degree (College, Bachalor,..)
+	University
+	
+Table interview : about the interview test
+	ID_cuoc phong van
+	ID_nguoi phong van
+	ID_Candidate_nguoi dc phong van
+	Position
+	IQ Test
+	Technical Test
+	Toeic
+	Interview Date 
+	Interview Result
+	Interview Comments 
+	Interviewer Name
+	Notes
+	Week No.
+	
+	
+
+Interview (n) - cuoc phong van
+
+Inteviewer : nguoi phong van
+
+Inteviewee : nguoc duoc phong van
+	
+	
+ 
+ security  : login dung framework thi se ko can lo ve session
+	:
+ login --> kiem tra role , session--> security
+	password luu o db ko dung o dang plain text 
+		tot nhat la hash , best : password + salt --> hash 
+
+load data --> o --> template + tile --> user co template rieng, manager co template rieng
+
+load data --> su dung hibernate IOC DI+ spring service + database-->  
+
+kiem tra luc 
+
+	list ra form tao candidate moi --> SpringMVC form 
+
+tao entities class tu database = hibernate tool
+
+
+
+view --> controller --> service --> dao -->  database
+
+Cac function CRUD create remove update delete
+role - role name
+user(1) - interviewee
+
+manager(3) - PM,interviewer
+
+
+
+xong - xem spring security 
+xong - show list candidate duoi csdu
+done - add candidate vao db mcsimple
+done - 29/12 -  add candidate MC
+done - 30/12 - delete candidate tren mcsimple
+done - 30/12 - delete candidate  tren MC
+done - 30/12 - edit tren  mcsimple
+done- edit candidate tren  MC
+done - 4/1/ - security on mcsimple
+done - 4/1/ - security on mc 
+
+chucc nang Statistics - Thong ke
+
+
+
+
+
+
+mid exam - quiz
+
+done - security
+done - phan quyen cho admin ,dba, user
+done - add, update, delete account
+bug - not load rolename in update account
+
+	create select edit delete course
+	create select edit delete exam
+	create website for review result before exam
+	exam
+	process result
+	play with css, bootstrap
+	
+
+
+
+test tren project mcsimple
+
+copy security tu demo SpringSecurityDB cua Instructor Tri
+x	copy thu vien tu DemoSpringSecurityDB->MCsimple
+x	copy text spring security vao web.xml
+x		them 1 dong dispatcher-serlet.xml
+x	copy 2 file spring security.xml va spring database.xml
+x	edit file spring-database.xml , sua lai ket noi vao database
+x	edit file dispatcher-servlet.xml
+x		toogle comment datasource 
+x	edit file redirect.jsp
+	copy file jsp va  x java from DemoSpringSecurityDB->MCsimple
+	
+	
+	
+	
+	
+	
+	
+Mid exam : Quiz , bao cao cuoi ky : quiz - 23/1 - 14h
+
+maybe function
+	message after action	
+		Bootstrap : Alerts
+
+transaction trong Hibernate ko bao gio time out
+
+manage course 
+	select all - done -  done css  background,header,table button
+	select 1 - done
+	add - done -  done css form, background
+	edit - done  - done css form, background
+	delete - done
+	list question by course id - done - done css table, background
+
+manage exam 
+	select all -  done - css background, header, table,  - done - xoa example div table header
+	select 1 - done
+	add -  done - done  css  background, form
+	edit -  done - done  css  background, form
+	delete -  done 
+	list question theo examid - done -
+		remove question from exam
+	modify - modifyExam
+		remove manual each question - not work
+			
+		*add Random Questions to Exam  - have no code
+			create record trong Exam
+		*add Question into Exam (Exam is already created)
+			column Number of Question in Exam
+			colum Number of Question actual in Exam
+				if 
+			Cell Question Bank Size for that course
+		
+				check QuestionID trong ExamItem so voi Question trong CourseID
+				
+			create list record trong Examitems
+			choose 
+	show Question theo Exam
+	
+manage question 
+	select all - done - styleAdmin : Background and header
+	select 1 - done 
+	add -  done -  css : form , background
+	edit -  done - css : form , background
+	delete - done
+	modify  done--> 
+		modifyAnswer.jsp  - done - 
+		editAnswer.jsp  - process  - - done css :  background , form
+	
+mini bug - button back == button edit
+
+manage answer 
+	select all Answer group by Question 
+	select all Answer  - done  - done css :  background , header
+	select 1 -  done
+	add - done -  css : form , background
+	edit - done - - done css :  background , form
+	delete - done
+	
+	
+View Result
+	all - admin	
+	user - base on username -  no css header css table 
+	tracking result - done - mini misunderstand 
+	filter Result - view by Course - Username - ExamName
+	
+
+Take a Quiz
+	Select Courses -> su dung form Model --> function ko co get post , se tu load lai chinh mính
+		View Result (if you haved) - done
+		Select Exam (if course haved) - done - edit co button "Review" result --> Tracking Result
+		Do a quiz -- doQuiz.jsp - done
+	See a result - test - Tracking result
+	
+
+
+user management
+	show all -  css header , background
+	add -  done - css form , background
+	edit done - css form , background
+	change password - 
+	delete
+	Optional
+		remove column Password
+		hash password
+
+	them yeu cau cho mid - exam : track tung cau hoi Dung - Sai
+	 
+Your first presentation  12/01 : any subject even non-technical
+	
+	
+@ModelAttribute : nhan vao Class Object
+@PathVariable : nhan vao 1 property
+
+showlist
+	core:foreEach
+
+springform:form
+
+
+edit tung question --> modify answer --> edit tung answer
+
+*khi xai spring security thi form nao xai method = post phai co - vi du trang editABC.html - addABC.html
+	<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
+	
+* path=	"courses.id" , khi truyen di thi 'path' se la gia tri truyen
+ 
+	<tr>
+				<td>Course ID</td>
+				<td>
+					<springform:radiobuttons items="${courses}" path="courses.id" itemLabel="courseName" itemValue="id" delimiter="<br>" />
+				</td>
+			</tr>
+*HTTP Status 500 - 
+Request processing failed; 
+nested exception is org.hibernate.TransientPropertyValueException: Not-null property references a transient value - 
+transient instance must be saved before current operation
+	bug add Object ABC - co cac property la cac Object khac , phai getProperty truoc khi create
+	
+	
+*bug su nhap nhang giu Java va DB
+				<td>Question Level</td>
+				<td>
+				<springform:select path="questionlevel.id"	items="${questionlevel}" itemLabel="difficulty"	itemValue="id" delimiter="<br>" />
+
+Java : co ABC.java co cac property QWE qwe , DB: QWE chi la id
+	
+		
+
+
+
+return "view"
+redirect controller 
+
+
+flow diagram
+user case diagram
+sequence diagram
+class diagram
+
+
+gioi thieu spring framework - ngan thoi
+
+xxx nhung cai requirement cua mid exam - tu nghi ra 
+	xong 
+	chua 
+	can lam them
+	
+xxx 	question bank
+xxx 	test
+			view result
+			thi
+			tao bo de
+xxx 	user management
+	% cua tung feature 
+		lam duoc 
+		chua lam duoc
+	ung dung cong nghe nao phan nao
+	ban than
+		diem manh 
+		diem yeu
+		cach khac phuc
+	design web app
+	code nhu the nao
+	test - 
+	hoc Junit test
+		viet test , test chuong trinh
+		demo
+	put ticket muon laptop ben IT de demo
+		cai Apache Tomcat 9.0 tren Software center web
+		Export Project --> Quiz.war
+		copy file vao tomcat/webapps
+	
+	
+		
+		
+
+		placeholder="Course Name" 
+		
+futrure feature
+	Quiz : check Attempt
+	Security : Hashpassword
+	Create new record : Validation
+	more friendly UI and Web user
+	
+	
+today 23/1
+	filter result
+	add question
+		manual
+			check list question theo course id trong Table question, voi question theo examid trong Table examitems
+		
+		add random question to exam - check List<Examitems>.size() - 
+			
+			
+		random
+			
+			
+			Multiple choice
+			
+24/1
+Exam :
+	add Multiple Question
+	add Random 10 Question
+account : change password
+security : fix bug - test
+authorization : 
+design  :
+		tile - template - done 
+		header : top left website
+		redesign : reviewResult.jsp
+Result : filter result		
+
+24/2 
+	tile 
+		desgin for 3 role seperately
+	extends
+			
+			
+			
+load tu tu tung doi tuong dung Hibernate cache
+6/2 : Node Angular.js
+
+
