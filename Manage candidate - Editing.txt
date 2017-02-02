@@ -370,14 +370,14 @@ today 23/1
 Exam :
 	add Multiple Question
 	add Random 10 Question
-account : change password
-security : fix bug - test
+account : change password - process - 90 % - not test
+security : fix bug - done
 authorization : 
 design  :
 		tile - template - done 
-		header : top left website
-		redesign : reviewResult.jsp
-Result : filter result		
+		header : top left website - 90 %
+		redesign : reviewResult.jsp - done
+Result : filter result - 30 %
 
 24/2 
 	tile 
