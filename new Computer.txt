@@ -1,0 +1,37 @@
+Affordable Computer
+	Peripheral ( ngoai bien)
+		Monitor
+			24' : 3.5m
+			27' : 5m
+		Mechanical keyboard
+			3m
+		Mouse
+		
+		Mouse pad
+		
+		Audio
+			Card âm thanh Creative SB Zx : 4.450.000 VNĐ
+		
+		Speaker - Loa Creative
+		Headphone - Tai Nghe Bose
+	Structure
+		Power
+			CM V850W		4.010.000 VNĐ
+			Corsair CX 750M 2.350.000 VNĐ
+		Cooling
+		
+		Case
+			Case Corsair 780T (No power) : 4.490.000 VNĐ
+	Support
+		RAM  
+			DDR4 Corsair 16GB (2666) C16R CMK16GX4M2A Ven LPX (2x8GB) : 2,8m
+		Mainboard
+			Gigabyte X99-UD4 : 6.120.000 VNĐ
+		Storage
+			SSD Samsung 250GB 2.5" 850Evo (Mz-75E250BW) : 2.755.000 VNĐ
+			HDD Seagate 4TB Sata : 3.200.000 VNĐ
+	Performance
+		CPU
+			CPU Core I7-6700 (3.4GHz) 7.550.000 VNĐ
+		GPU
+			Asus 8GB Strix GTX1070-8G-Gaming : 12.449.000 VNĐ
