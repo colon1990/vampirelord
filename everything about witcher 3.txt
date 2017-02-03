@@ -1,0 +1,22 @@
+Ability Points
+	69 : level up
+	25 : Power Place
+	94 : sum
+	
+	270 total points need to full upgrade all skills
+		- Combat (91 to fully upgrade) : Fast Attack(10), Strong Attack(10), Defense(10), Markmanship(10),Battle Trance(10)
+		- Signs (79 to fully upgrade) : Aard(16), Igni(18), Yrden(15), Quen(16), Axii(14)
+		- Alchemy (90 to fully upgrade): Brewing(18), Oil Preparation(18), Bomb Creation(18), Mutation(18), Toxicity(18)
+		- General (10 to fully upgrade) : 1 point for each, choosing one that complements your armor/playstyle such as Cat School Techniques
+
+
+Blood and Wine
+	new mutation
+		1 slot - Research 2 mutation - 4 skill pts
+		2 slot - Research 4 mutation - 9 skill pts
+		3 slot - Research 8 mutation - 21 skill pts
+		4 slot - Research 12 mutation - 35 skill pts
+		
+		Inner ring with 3 mutation need 2 pts each to be researched
+		Middle ring with 7 mutation need 3 pts each to be researched
+		Outer ring with 2 mutation need 4 pts each to be researched
